@@ -33,4 +33,6 @@ https://www.analyticsvidhya.com/blog/2018/03/introduction-k-neighbours-algorithm
 - In GBDT if we drop first and last tree, the  model we have sequence of trees, each improve predictions of all previous. So, if we drop first tree — sum of all the rest trees will be biased and overall performance should drop. If we drop the last tree -- sum of all previous tree won't be affected, so performance will change insignificantly (in case we have enough trees). case1 performance will drop more than in the case2.
 - In a Random forest, each tree in forest is independent from the others, so two RF with 500 trees is essentially the same as single RF model with 1000 trees.
 
+## ML Workflow
+![][\images\ml_map.png]
 
