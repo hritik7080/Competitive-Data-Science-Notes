@@ -34,5 +34,5 @@ https://www.analyticsvidhya.com/blog/2018/03/introduction-k-neighbours-algorithm
 - In a Random forest, each tree in forest is independent from the others, so two RF with 500 trees is essentially the same as single RF model with 1000 trees.
 
 ## ML Workflow
-![image][/images/ml_map.png]
+![image][./images/ml_map.png]
 
