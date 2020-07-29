@@ -36,3 +36,46 @@ https://www.analyticsvidhya.com/blog/2018/03/introduction-k-neighbours-algorithm
 ## ML Workflow
 ![image][./images/ml_map.png]
 
+## Numeric Feature
+
+### Feature Processing
+- Regularization impact turns out to be proportional to feature scale.
+- Gradient Desent method can go crazy without proper saling.
+
+Different feature scaling ruslt in different models quality. 
+
+Also we can use rank transformation, linear models, KNN, neural networks can benefit from this kind of transformation.
+
+Rank can be imported as a random data function from scipy. 
+
+scipy.stats.rankdata
+
+One more important note about the rank transformation is that to apply to the test data,
+you need to store the creative mapping from features values to their rank values.
+Or alternatively, you can concatenate,
+train, and test data before applying the rank transformation.
+
+Some more transformation for non tree based models specially neural networks :
+- Log transfom
+np.log(1+x)
+- Raising to the power < 1:
+np.sqrt(x + 2/3)
+
+Another important moment which holds true for all preprocessings is that sometimes,
+it is beneficial to train a model on
+concatenated data frames produced by different preprocessings,
+or to mix models training differently-preprocessed data. Again, linear models, KNN,
+and neural networks can benefit hugely from this. 
+
+### Feature Generation
+
+Ways to proceed:
+- prior knowledge
+- EDA
+
+Sometimes, if we have prices of products as a feature,
+we can add new feature indicating fractional part of these prices.
+For example, if some product costs 2.49,
+the fractional part of its price is 0.49.
+This feature can help the model utilize
+the differences in people's perception of these prices. 
